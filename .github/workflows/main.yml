@@ -1,15 +1,13 @@
-name: Rinku Yadav
+name: First CI Workflow
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  demo:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      -name: greetings
-       run: echo "Hello from Rinku"
-  
-    
+      - name: Show Greeting
+        run: echo "Hello Rinku! Workflow is working 🎉"
